@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-
 import { Link, useParams } from "react-router-dom";
 import { useQuery } from "react-query";
 import axios from "axios";
