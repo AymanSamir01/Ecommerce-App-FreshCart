@@ -137,7 +137,14 @@ let routers = createBrowserRouter([
         element: <ResetPassword />,
       },
       { path: "login", element: <Login /> },
-      { path: "Ecommerce-App-FreshCart", element: <Login /> },
+      {
+        path: "Ecommerce-App-FreshCart",
+        element: (
+          <ProtectedRoute>
+            <Home />
+          </ProtectedRoute>
+        ),
+      },
       { path: "register", element: <Register /> },
       { path: "*", element: <Notfound /> },
     ],
